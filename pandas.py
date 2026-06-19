@@ -6,7 +6,7 @@ data = {
 }
 df = pd.DataFrame(data)
 basket = df.groupby(['Transaction', 'Item'])['Item'].count().unstack().fillna(0)
-freq_Itemsets = apriori(basket, min_support = 0.2, use_colnames = True)
-rules = association_rules(freq_Itemsets, metric = 'confidence', min_threshold = 0.59)
+freq_Itemsets = apriori(basket, min_support = 0.3, use_colnames = True)
+rules = association_rules(freq_Itemsets, metric = 'confidence', min_threshold = 0.49)
 print("Association Rules:")
 print(rules)
