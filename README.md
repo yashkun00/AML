@@ -116,7 +116,7 @@ freq_Itemsets = apriori(
 
 ### Minimum Support
 
-The ~min_support=0.3~ parameter means an itemset must appear in at least **30% of transactions** to be considered frequent.
+The `min_support=0.3` parameter means an itemset must appear in at least **30% of transactions** to be considered frequent.
 
 ---
 
